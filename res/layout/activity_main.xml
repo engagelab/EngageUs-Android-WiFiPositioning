@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stopButton"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/stopButton"
+        android:layout_below="@+id/stopButton"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="x"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:hint="y"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/accel_txt"
+        android:layout_marginRight="15dp"
+        android:onClick="scanNetwork"
+        android:text="@string/scan" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/startButton"
+        android:layout_below="@+id/startButton"
+        android:onClick="stopScanning"
+        android:text="Stop"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/accel_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="17dp"
+        android:text="Accelerometer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/readings_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accel_txt"
+        android:layout_below="@+id/delete_data"
+        android:layout_marginTop="14dp"
+        android:text="Readings"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/store_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:gravity="center_vertical|center_horizontal|left"
+        android:onClick="storePoint"
+        android:text="Store Point" />
+
+    <Button
+        android:id="@+id/delete_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/store_button"
+        android:layout_alignBottom="@+id/store_button"
+        android:layout_alignLeft="@+id/readings_txt"
+        android:onClick="deleteData"
+        android:text="Delete data" />
+
+    <TextView
+        android:id="@+id/results_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/readings_txt"
+        android:layout_below="@+id/readings_txt"
+        android:layout_marginTop="16dp"
+        android:text="Results"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

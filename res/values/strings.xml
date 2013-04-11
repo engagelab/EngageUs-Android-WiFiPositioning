@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RSSITest</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="results">Results</string>
+    <string name="scan">Scan</string>
+    <!-- string name="MAC1">00:1e:4a:54:c3:03</string>
+    <string name="MAC2">00:1e:4a:54:c3:0c</string>
+    <string name="MAC3">00:1e:4a:54:c3:04</string-->
+    <string name="MAC1">34:21:09:02:ae:e8</string><!-- RED -->
+    <string name="MAC2">b8:a3:86:64:2a:49</string><!-- GREEN -->
+    <string name="MAC3">b8:a3:86:64:2c:f7</string><!-- YELLOW -->
+</resources>
